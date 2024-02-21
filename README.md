@@ -20,7 +20,6 @@ To start generating tests with KLEE, follow these steps:
    ```sh
    python3 compile_bitcode_tests.py -c -1
 
-   ```sh
    klee <INSERT FILE NAME>.bc
 
 ## Environment
