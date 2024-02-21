@@ -14,8 +14,8 @@ This repository contains tests for [KLEE](http://klee.github.io/), a symbolic ex
 
 To start generating tests with KLEE, follow these steps:
 
-1. **Compile to LLVM Bitcode:**
-   First, compile the desired C/C++ program into LLVM bitcode using the provided Python script. For complex C++ programs that failed in our initial tests, use the following command:
+1. **Compile to LLVM Bitcode and Run KLEE:**
+   First, compile the desired C/C++ program into LLVM bitcode using the provided Python script. For complex C++ programs that failed in our initial tests, use the following commands:
 
    ```sh
    python3 compile_bitcode_tests.py -c -1
