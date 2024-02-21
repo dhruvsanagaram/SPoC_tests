@@ -10,6 +10,16 @@ This repository contains tests for [KLEE](http://klee.github.io/), a symbolic ex
   - **Hypothesis:** KLEE can only generate tests for shared C/C++ constructs, not C++-specific constructs.
   - **Usage:** Select between programs using `-1`, `-simple_io` in the command line.
 
+## Getting Started
+
+To start generating tests with KLEE, follow these steps:
+
+1. **Compile to LLVM Bitcode:**
+   First, compile the desired C/C++ program into LLVM bitcode using the provided Python script. For complex C++ programs that failed in our initial tests, use the following command:
+
+   ```sh
+   python3 compile_bitcode_tests.py -c -1
+
 ## Environment
 
 - **Python:** 3.10.6
